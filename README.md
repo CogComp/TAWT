@@ -6,7 +6,7 @@ If you use this code for your work, please cite
       title={Weighted Training for Cross-Task Learning}, 
       author={Chen, Shuxiao and Crammer, Koby and He, Hangfeng and Roth, Dan and Su, Weijie J},
       journal={arXiv preprint arXiv:2105.14095},
-      year={2021},
+      year={2021}
 }
 ```
 
