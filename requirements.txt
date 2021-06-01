@@ -1,0 +1,11 @@
+transformers==2.8.0
+tqdm==4.43.0
+scipy==1.4.1
+seqeval==0.0.12
+numpy==1.18.1
+torch==1.4.0
+apex==0.9.10dev
+ptvsd==4.3.2
+scikit_learn==0.24.2
+tensorboardX==2.2
+tensorflow==2.5.0

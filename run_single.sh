@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+export WORKING_DIR=/path/to/working/dir
+export MAX_LENGTH=128
+export BERT_MODEL=bert-base-cased
+export BATCH_SIZE=32
+export NUM_EPOCHS=4
+export SEED=1
+
+python run_single.py \
+--data_dir $WORKING_DIR/data \
+--model_type bert \
+--task predicate \
+--train_sent_num 300 \
+--labels $WORKING_DIR/data/predicate_labels.txt \
+--model_name_or_path $BERT_MODEL \
+--output_dir $WORKING_DIR/bert-base-cased-single-predicate \
+--max_seq_length  $MAX_LENGTH \
+--num_train_epochs $NUM_EPOCHS \
+--per_gpu_train_batch_size $BATCH_SIZE \
+--per_gpu_eval_batch_size $BATCH_SIZE \
+--seed $SEED \
+--do_train \
+--do_eval \
+--do_predict

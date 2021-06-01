@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+echo "Settings $1 $2 $3 $4 $5 $6 $7 $8 $9"
+
+export WORKING_DIR=/path/to/working/dir
+export MAX_LENGTH=128
+export BERT_MODEL=bert-base-cased
+export BATCH_SIZE=32
+export NUM_EPOCHS=4
+export SEED=1
+
+python run_weighted_joint_training_multi_normalized.py \
+--data_dir $WORKING_DIR/data \
+--model_type bert \
+--auxiliary_task_list $1 $2 $3 \
+--main_task $4 \
+--task_weights $5 $6 $7 $8 \
+--main_task_train_sent_num $9 \
+--gradient_sampling_batch_size 64 \
+--normalized_gradients \
+--model_name_or_path $BERT_MODEL \
+--output_dir $WORKING_DIR/bert-base-cased-weighted-joint-training-multi-$1-$2-$3-$4-normalized \
+--max_seq_length  $MAX_LENGTH \
+--num_train_epochs $NUM_EPOCHS \
+--per_gpu_train_batch_size $BATCH_SIZE \
+--per_gpu_eval_batch_size $BATCH_SIZE \
+--seed $SEED \
+--do_train \
+--do_eval \
+--do_predict
