@@ -1,12 +1,12 @@
 # TAWT
-This is the code repository for the ArXiv paper [Weighted Training for Cross-Task Learning](https://arxiv.org/pdf/2105.14095.pdf).
+This is the code repository for the ICLR paper [Weighted Training for Cross-Task Learning](https://openreview.net/forum?id=ltM1RMZntpu).
 If you use this code for your work, please cite
 ```
-@article{chen2021weighted,
+@article{chen2022weighted,
       title={Weighted Training for Cross-Task Learning}, 
       author={Chen, Shuxiao and Crammer, Koby and He, Hangfeng and Roth, Dan and Su, Weijie J},
-      journal={arXiv preprint arXiv:2105.14095},
-      year={2021}
+      journal={International Conference on Learning Representations},
+      year={2022}
 }
 ```
 
