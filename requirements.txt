@@ -2,7 +2,7 @@ transformers==2.8.0
 tqdm==4.43.0
 scipy==1.4.1
 seqeval==0.0.12
-numpy==1.18.1
+numpy==1.19.2
 torch==1.4.0
 apex==0.9.10dev
 ptvsd==4.3.2
