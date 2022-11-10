@@ -7,7 +7,7 @@ export BATCH_SIZE=32
 export NUM_EPOCHS=4
 export SEED=1
 
-python code/run_single.py \
+python sources/run_single.py \
 --data_dir $WORKING_DIR/data \
 --model_type bert \
 --task predicate \
