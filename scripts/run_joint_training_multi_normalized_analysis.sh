@@ -9,7 +9,7 @@ export BATCH_SIZE=32
 export NUM_EPOCHS=4
 export SEED=1
 
-python run_joint_training_multi_normalized_analysis.py \
+python code/run_joint_training_multi_normalized_analysis.py \
 --data_dir $WORKING_DIR/data \
 --model_type bert \
 --auxiliary_task_list pos predicate \
