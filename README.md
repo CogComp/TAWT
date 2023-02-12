@@ -1,5 +1,14 @@
 # TAWT
 This is the code repository for the ICLR paper [Weighted Training for Cross-Task Learning](https://openreview.net/forum?id=ltM1RMZntpu).
+If you use this code for your work, please cite
+```
+@article{chen2022weighted,
+      title={Weighted Training for Cross-Task Learning}, 
+      author={Chen, Shuxiao and Crammer, Koby and He, Hangfeng and Roth, Dan and Su, Weijie J},
+      journal={International Conference on Learning Representations},
+      year={2022}
+}
+```
 
 ## Installing dependencies
 Use virtual environment tools (e.g miniconda) to install packages and run experiments\
@@ -36,14 +45,3 @@ To reproduce the experiments for our main results and analysis:
 sh scripts/run_experiments.sh
 ```
 Note that you may need to divide the whole scripts into several parts to reproduce all experiments.
-
-## Citation
-If you use this code for your work, please cite
-```
-@article{chen2022weighted,
-      title={Weighted Training for Cross-Task Learning}, 
-      author={Chen, Shuxiao and Crammer, Koby and He, Hangfeng and Roth, Dan and Su, Weijie J},
-      journal={International Conference on Learning Representations},
-      year={2022}
-}
-```
